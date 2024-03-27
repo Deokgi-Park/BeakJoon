@@ -6,14 +6,12 @@ from collections import deque
 D = {'a':1,'b':2,'c':3,'c':3}
 print(D)
  #for문으로 생성 예제
-E = {x: x**2 for x in [2, 4, 6]}
+EE = [2, 4, 6]
+E = {len(str(x)): x**2 for x in EE}
 print(E)
 
 print(D['a'])
-print(E[2])
-print(E[4])
-print(E[6])
+print(E[1])
 # 키 값으로 튜플 생성 후 리스트구조로 생성 
 F=E.items()
 print(F)
-print(F[0][0])
