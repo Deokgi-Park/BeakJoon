@@ -41,6 +41,7 @@ print(A[0])
 
  # zip 같은 길이의 시퀀스를 결합
 G, H = ['1번', '2번'], (123,456)
+print(zip(G,H))
 print(list(zip(G,H)))
 print(dict(zip(G,H)))
 print(tuple(zip(G,H)))
