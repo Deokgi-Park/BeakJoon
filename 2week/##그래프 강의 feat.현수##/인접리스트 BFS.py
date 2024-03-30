@@ -29,4 +29,4 @@ def bfs(graph,node):
 
     
 
-bfs(graph,1)
+bfs(graph,2)
