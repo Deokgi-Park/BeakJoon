@@ -22,11 +22,11 @@ visited = [False] * 7
 def dfs(nowNode):
     visited[nowNode] = True
     ## 전위 프린트 공간
-    #print(nowNode, end=' ')
+    print(nowNode, end=' ')
     for one in range(len(matric)):
         if matric[nowNode][one] != 0:
             dfs(one)
     ## 후위 프린트 공간
     #print(nowNode, end=' ')
 
-dfs(3)
+dfs(1)

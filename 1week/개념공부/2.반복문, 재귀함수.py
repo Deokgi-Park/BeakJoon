@@ -3,8 +3,9 @@ for i in range(5):
     print(i)
 
 #특정 횟수 반복 인덱스 추가(enumerate 사용)
-for i,v in enumerate(range(5)):
-    print(i ,"   ", v)
+words=['apple','apple1','apple12','apple123']
+for i,v in enumerate(words):
+    print(i ,":", v)
 
 # 리스트 길이만큼 반복
 words=['apple','apple1','apple12','apple123']
@@ -17,7 +18,7 @@ for user, status in users.copy().items():
     if status == 'inactive':
         del users[user]
 
-print(users)
+
 print(users.copy())
 print(users.copy().items())
 
@@ -38,12 +39,15 @@ for user in users.items():
 def test(data, cnt) : 
     # 끝나는 조건
     if data<1 :
-        print('카운트 : ' + str(cnt+1))
+        print('탈출 횟수 : ' + str(cnt+1))
         return cnt+1
     #노드 분기1
+    print("왼쪽 진입 전 DATA : ",data)
     cnt = test(data-1, cnt)
+    #노드 분기2
+    print("오른쪽 진입 전 DATA : ",data)
+    cnt = test(data-2, cnt)
+    print("함수 끝 : ", cnt)
     return cnt
 
-#왼쪽에서 -1 한 경우      갯수 : 2 
-#오른쪽에서 -1 한 경우    갯수 : 2
-# 2 + 2 = 4
+print(test(3,0))
