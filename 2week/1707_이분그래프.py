@@ -1,5 +1,4 @@
 import sys
-set
 N = int(input())
 sys.setrecursionlimit(10 ** 6)
 #visited -1 : 레드 
