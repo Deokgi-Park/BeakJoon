@@ -13,6 +13,7 @@ print(basket)
 print('orange' in basket)
 
 print(basket.add('painapple'))
+print(basket.add('painapple'))
 print(basket)
 print(basket.difference(basket2))
 print(basket.pop())
