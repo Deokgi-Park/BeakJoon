@@ -16,7 +16,6 @@ def bfs(start):
     visited[start] = True
     dis[start] = 0 
     while q:
-        
         v = q.popleft()
         for i in graph[v]:
             if not visited[i] :
